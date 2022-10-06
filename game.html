@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html>
-    
+
 <head>    
 </head>
 
 <body>
+    <script>
+        //choices array
+        const choices = ["rock", "paper", "scissors"];      
+        
+        
+        //picks random value for npc
+        function getComputerChoice() {
+            return Math.floor(Math.random() * choices.length);    
+        }
 
+        //converts string into number to work with array positions
+        function getPlayerChoice(input) {      
+            if (input == "rock") {
+              return 0;
+            }
+            else if (input == "paper") {
+                return 1;
+            }
+            else if (input == "scissors") {
+                return  2;
+            }
+            else (alert("Wrong selection!"));
+        } 
 
+        //choice functions for both players
+        function computerSelection() {
+            return choices[getComputerChoice()];
+        }
+        function playerSelection(input) {
+            return choices[getPlayerChoice(input)];
+        }
+    
+        
+      
+
+    </script>
 </body>
 
 </html>

@@ -7,6 +7,10 @@ useful code:
 const choices = ["rock", "paper", "scissors"];
 
 
+//for loop
+for (let i = 0; i < 5; i++) {}
+
+
 //picks random value for npc
 function getComputerChoice() {
     return Math.floor(Math.random() * choices.length);    
@@ -22,7 +26,7 @@ function getPlayerChoice(input) {
       return 1;
     }
     else if (input == "scissors") {
-      return  2;
+      return 2;
     }
     /*else (alert("Wrong selection!"));*/
 }
@@ -52,3 +56,5 @@ function playGame(playerSelection, computerSelection) {
                 }
     else (alert("it's a tie!"));
 }
+
+
